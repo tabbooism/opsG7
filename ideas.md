@@ -65,3 +65,9 @@ The mark is a **signal locator**: three offset coordinate lines converge on an o
 
 ### Signature Brand Color
 **Cyanographic Signal — `#8DD5F7`**. This low-glare cyan identifies neutral intelligence and navigation without drifting toward neon.
+
+## Style Decisions
+
+- The persistent shell must display the signal-locator mark and an **OPS / COORDINATOR** index-badge wordmark.
+- Primary screens must sweep left-to-right from command context to evidence and next action; they should not resolve into a centered SaaS-style canvas.
+- Panels use dossier tabs, archival rules, coordinate-like marks, and asymmetrical corners rather than generic rounded-card language.
