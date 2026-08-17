@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "policy": "Every exercise is authorization-gated, consent-based, and evidence-oriented. No exploit delivery, credential capture, remote execution, or persistence testing is permitted by these templates.",
+  "templates": [
+    {
+      "id": "identity-escalation-tabletop",
+      "name": "Identity escalation tabletop",
+      "approvalGate": "Written rules of engagement and named stakeholder approval.",
+      "objective": "Measure verification, escalation, and reporting decisions using a fictional identity-change scenario.",
+      "evidence": ["Documented decision timeline", "Aggregate reporting rate", "Control-owner remediation notes"],
+      "stopCriteria": ["Unapproved participant or asset is encountered", "A participant reports distress or confusion", "Scenario deviates from the written scope"]
+    },
+    {
+      "id": "dependency-change-review",
+      "name": "Dependency-change review",
+      "approvalGate": "Change-management owner approval and a non-production review dataset.",
+      "objective": "Assess how maintainers verify provenance and escalate suspicious dependency changes without publishing or executing code.",
+      "evidence": ["Review checklist", "Decision record", "Remediation owner and due date"],
+      "stopCriteria": ["Any request to alter a production package", "Any unapproved credential request", "Any request to bypass source-control safeguards"]
+    }
+  ]
+}

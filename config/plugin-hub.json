@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "policy": "Read-only public-source context collection only. Plugins never execute commands, create payloads, authenticate with supplied credentials, or target systems.",
+  "plugins": [
+    {
+      "id": "cisa-kev",
+      "name": "CISA Known Exploited Vulnerabilities",
+      "mode": "read-only",
+      "installation": "declarative",
+      "endpoint": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "requiresAuthorization": true,
+      "purpose": "Prioritize public vulnerability advisories for defensive review."
+    },
+    {
+      "id": "nvd-cve",
+      "name": "NVD CVE API",
+      "mode": "read-only",
+      "installation": "declarative",
+      "endpoint": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "requiresAuthorization": true,
+      "purpose": "Retrieve public CVE metadata for approved asset-owner review."
+    },
+    {
+      "id": "github-security-advisories",
+      "name": "GitHub Security Advisories",
+      "mode": "read-only",
+      "installation": "declarative",
+      "endpoint": "https://api.github.com/advisories",
+      "requiresAuthorization": true,
+      "purpose": "Review public dependency advisories and remediation context."
+    }
+  ]
+}

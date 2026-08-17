@@ -46,3 +46,14 @@ button, input, select, textarea { font: inherit; } button { cursor: pointer; } a
 .ops-banner { border-radius: 8px 8px 14px 8px; }
 @media (max-width: 980px) { .archive-lockup { margin-right: 12px; padding-right: 12px; } }
 @media (max-width: 640px) { .archive-lockup img,.archive-wordmark { display: none; }.archive-lockup { margin-right: 7px; padding-right: 7px; } }
+
+/* Standalone deployment override: all prominent archive treatments are rendered locally without hosted image assets. */
+.signal-locator { position: relative; display: inline-block; width: 37px; height: 37px; flex: 0 0 auto; border: 2px solid var(--cyan); border-radius: 50%; }
+.signal-locator::before { content: ""; position: absolute; width: 20px; height: 2px; left: -9px; top: 8px; background: var(--cyan); box-shadow: 0 8px 0 rgba(141,213,247,.5); }
+.signal-locator::after { content: ""; position: absolute; width: 5px; height: 5px; left: 14px; top: 14px; border-radius: 50%; background: var(--cyan); }
+.signal-locator--small { width: 21px; height: 21px; border-width: 1px; }.signal-locator--small::before { width: 12px; height: 1px; left: -5px; top: 5px; box-shadow: 0 5px 0 rgba(141,213,247,.5); }.signal-locator--small::after { width: 3px; height: 3px; left: 8px; top: 8px; }
+.archive-lockup img { display: none; }
+.map-art { background-image: linear-gradient(90deg, rgba(11,16,21,.25), rgba(11,16,21,.08)), repeating-radial-gradient(ellipse at 28% 39%, transparent 0 13px, rgba(141,213,247,.15) 14px 15px, transparent 16px 29px), linear-gradient(145deg, #17313d, #0e171f 55%, #0b1015) !important; }
+.ops-banner { background: linear-gradient(90deg, rgba(15,28,36,.94), rgba(11,16,21,.7)), repeating-linear-gradient(90deg, rgba(141,213,247,.11) 0 1px, transparent 1px 54px), linear-gradient(145deg, #19303a, #0b1015) !important; }
+.validation-hero { background: linear-gradient(90deg, rgba(14,23,30,.95), rgba(14,23,30,.55)), radial-gradient(circle at 88% 12%, rgba(141,213,247,.24), transparent 23%), repeating-linear-gradient(0deg, rgba(220,229,232,.08) 0 1px, transparent 1px 27px), #10202a !important; }
+.report-art { background: linear-gradient(90deg, rgba(10,16,21,.9), rgba(10,16,21,.25)), radial-gradient(circle at 88% 45%, rgba(141,213,247,.32), transparent 11%), repeating-linear-gradient(0deg, rgba(220,229,232,.10) 0 1px, transparent 1px 30px), linear-gradient(145deg, #2b4f5f, #111c24 68%) !important; }
