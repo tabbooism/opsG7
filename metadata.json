@@ -2,5 +2,7 @@
   "name": "RuneChain Omega",
   "description": "Advanced APT Kill Chain Dashboard and C2 Console for cybersecurity operations, monitoring, and payload management.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
